@@ -63,8 +63,8 @@ curl \
 -F 'limit=50'
                 </code></pre>
             <p>
-                To get characters you need to make a POST call to the following url :<br>
-                <code class="higlighted break-word">http://api.westeros.com/character/get</code>
+                TOBB Ticaret Sanayi Odası - Kapasite Talep Formu :<br>
+                <code class="higlighted break-word"><a href='templates/wsdlOntoloji.wsdl'>wsdlOntoloji.wsdl</a></code>
             </p>
             <br>
             <pre><code class="json">
@@ -133,59 +133,57 @@ Result example :
   ]
 }
                 </code></pre>
-            <h4>QUERY PARAMETERS</h4>
+            <h4>ONTOLOJİ DOSYA YAPISI </h4>
             <table class="central-overflow-x">
                 <thead>
                 <tr>
-                    <th>Field</th>
-                    <th>Type</th>
-                    <th>Description</th>
+                    <th>Varlık</th>
+                    <th>Alt Varlık</th>
+                    <th>Açıklama</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>secret_key</td>
-                    <td>String</td>
-                    <td>Your API key.</td>
+                    <td>belge_no</td>
+                    <td>baglı_olunan_holding</td>
+                    <td>baglı_olunan_holding</td>
                 </tr>
                 <tr>
-                    <td>search</td>
-                    <td>String</td>
-                    <td>(optional) A search word to find character by name.</td>
+                    <td>belge_no</td>
+                    <td>is_yeri_adresi</td>
+                    <td>is_yeri_adresi</td>
                 </tr>
                 <tr>
-                    <td>house</td>
-                    <td>String</td>
-                    <td>
-                        (optional) a string array of houses:
-                    </td>
+                    <td>belge_no</td>
+                    <td>merkezi_adres</td>
+                    <td>merkezi_adres</td>
                 </tr>
                 <tr>
-                    <td>alive</td>
-                    <td>Boolean</td>
-                    <td>
-                        (optional) a boolean to filter alived characters
-                    </td>
+                    <td>belge_no</td>
+                    <td>mersis_no</td>
+                    <td>mersis_no</td>
                 </tr>
                 <tr>
-                    <td>gender</td>
-                    <td>String</td>
-                    <td>
-                        (optional) a string to filter character by gender:<br>
-                        m: male<br>
-                        f: female
-                    </td>
+                    <td>belge_no</td>
+                    <td>sanayi_sicil_no</td>
+                    <td>sanayi_sicil_no</td>
                 </tr>
                 <tr>
-                    <td>offset</td>
-                    <td>Integer</td>
-                    <td>(optional - default: 0) A cursor for use in pagination. Pagination starts offset the specified offset.</td>
+                    <td>belge_no</td>
+                    <td>tescilli_marka</td>
+                    <td>tescilli_marka</td>
                 </tr>
                 <tr>
-                    <td>limit</td>
-                    <td>Integer</td>
-                    <td>(optional - default: 10) A limit on the number of objects to be returned, between 1 and 100.</td>
+                    <td>belge_no</td>
+                    <td>ticaret_sicil_no</td>
+                    <td>ticaret_sicil_no</td>
                 </tr>
+                <tr>
+                    <td>belge_no</td>
+                    <td>vergi_daire_no</td>
+                    <td>vergi_daire_no</td>
+                </tr>
+
                 </tbody>
             </table>
         </div>
