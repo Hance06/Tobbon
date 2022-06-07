@@ -68,12 +68,11 @@ curl \
             </p>
             <br>
             <pre><code class="json">
-Sonuç :
+Sonuç (Henüz çıktı öreği alınmadı taslaktır.) :
 
 {
   query:{
-    offset: 0,
-    limit: 50,
+    talep: 1,
     house: [
       "Stark",
       "Bolton"
@@ -321,40 +320,52 @@ Sonuç :
             </table>
         </div>
         <div class="overflow-hidden content-section" id="content-errors">
-            <h2>Errors</h2>
+            <h2>Sorgular</h2>
             <p>
-                The Westeros API uses the following error codes:
+                Kapasite Talep Formu API'sinin 3 temel yapısı bulunmaktadır, bunlar:
             </p>
             <table>
                 <thead>
                 <tr>
-                    <th>Error Code</th>
-                    <th>Meaning</th>
+                    <th>Varlık</th>
+                    <th>Alt Varlık</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>X000</td>
+                    <td>Bilgiler</td>
                     <td>
-                        Some parameters are missing. This error appears when you don't pass every mandatory parameters.
+                        hasEksiksizdoldurmalı
+                    </td>
+                    <td>
+                        hasGüncelolmalı
+                    </td>
+                    <td>
+                        hasHatasızdoldurulmalı
+                    </td>
+                    <td>
+                        hasKurallarauygunolmalı
+                    </td>
+                    <td>
+                        hasResmidüzenicermeli
                     </td>
                 </tr>
                 <tr>
-                    <td>X001</td>
+                    <td>Eksikler</td>
                     <td>
-                        Unknown or unvalid <code class="higlighted">secret_key</code>. This error appears if you use an unknow API key or if your API key expired.
+                        hasTespitedilmeli
                     </td>
                 </tr>
                 <tr>
-                    <td>X002</td>
+                    <td>Veriler</td>
                     <td>
-                        Unvalid <code class="higlighted">secret_key</code> for this domain. This error appears if you use an  API key non specified for your domain. Developper or Universal API keys doesn't have domain checker.
+                        hasDogrubilgi
                     </td>
-                </tr>
-                <tr>
-                    <td>X003</td>
                     <td>
-                        Unknown or unvalid user <code class="higlighted">token</code>. This error appears if you use an unknow user <code class="higlighted">token</code> or if the user <code class="higlighted">token</code> expired.
+                        hasHatasızolmalı
+                    </td>
+                    <td>
+                        hasNetsayıicermeli
                     </td>
                 </tr>
                 </tbody>
