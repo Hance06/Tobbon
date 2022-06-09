@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'rest_framework',
-    'tobbon.apps.ApiConfig',
+    'tobbon.apps.TobbonConfig',
 ]
 
 MIDDLEWARE = [
