@@ -24,7 +24,7 @@ from tobbon.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('api/', include('tobbon.api.urls'))
+    path('api/', include('tobbon.api.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
