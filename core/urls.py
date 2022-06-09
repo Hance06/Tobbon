@@ -22,9 +22,9 @@ from django.conf import settings
 from tobbon.views import index
 
 urlpatterns = [
-    path('', index, name='index'),
     path('admin/', admin.site.urls),
     path('api/', include('tobbon.api.urls')),
+    path('', index, name='index'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
