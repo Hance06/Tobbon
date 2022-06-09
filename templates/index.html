@@ -41,14 +41,16 @@
             <h1>Ön Tanım</h1>
             <pre>
     API URL ve WSDL Kaynak Yolu
-
-        https://www.github.com/Hance06
+    
+        Doküman: https://www.github.com/Hance06
+        API: http://www.cengpy.com:8000/api/belgeler/
+        WSDL: http://www.cengpy.com:8000/tobbontoloji.wsdl
                 </pre>
             <p>
                 Sanayi Odalarına kaydolarak sanayi kuruluşu niteliği kazanan özel veya tüzel kişiliklerin kimlik kartı niteliğinde olan ve bu kuruluşların irtibat bilgilerini, üretim konularını ve yıllık üretim kapasitelerini, teknolojilerini, makine parklarını, kullandıkları hammaddeleri, sermaye ve istihdam bilgileri ile benzeri konuları içeren kapasite raporlarını, kuruluşların bağlı bulundukları Sanayi Odaları düzenlemektedir.
             </p>
             <p>
-                Bu projede geliştirilen <strong>TOBBON_API</strong> dokümanlarda kolaylık için geliştirildi. API URL: <a href="#">www.cengpy.com</a>
+                Bu projede geliştirilen <strong>TOBBON_API</strong> dokümanlarda kolaylık için geliştirildi. API URL: <a href="/api/belgeler/" target="blank">api/belgeler</a>
             </p>
         </div>
         <div class="overflow-hidden content-section" id="content-get-characters">
@@ -56,11 +58,9 @@
             <pre><code class="bash">
 # Here is a curl example
 curl \
--X POST http://api.westeros.com/character/get \
--F 'secret_key=your_api_key' \
--F 'house=Stark,Bolton' \
--F 'offset=0' \
--F 'limit=50'
+-X POST http://www.cengpy.com/api/belgeler \
+-F 'secret_key=TOBB' \
+-F 'belgeler=1'
                 </code></pre>
             <p>
                 TOBB Ticaret Sanayi Odası - Kapasite Talep Formu :<br>
@@ -68,69 +68,46 @@ curl \
             </p>
             <br>
             <pre><code class="json">
-Sonuç (Henüz çıktı öreği alınmadı taslaktır.) :
+Belgeler:
 
-{
-  query:{
-    talep: 1,
-    house: [
-      "Stark",
-      "Bolton"
-    ],
-  }
-  result: [
-    {
-      id: 1,
-      first_name: "Jon",
-      last_name: "Snow",
-      alive: true,
-      house: "Stark",
-      gender: "m",
-      age: 14,
-      location: "Winterfell"
+[
+    { 
+	    "belge_basligi" : "Talep 1",
+	    "bagli_olunan_holding" : "Medeni",
+	    "firma_unvani" : "Bilişim",
+	    "is_yeri_adresi" : "Ankara",
+	    "merkezi_adres" : "Ankara",
+	    "mersis_no" : "1",
+	    "sanayi_sicil_no" : "2",
+	    "tescilli_marka" : "Pars",
+	    "ticaret_sicil_no" : "4",
+	    "vergi_daire_no" : "5"
     },
-    {
-      id: 2,
-      first_name: "Eddard",
-      last_name: "Stark",
-      alive: false,
-      house: "Stark",
-      gender: "m",
-      age: 35,
-      location: 'Winterfell'
+    { 
+	    "belge_basligi" : "Talep 2",
+	    "bagli_olunan_holding" : "Arslan",
+	    "firma_unvani" : "Teknoloji",
+	    "is_yeri_adresi" : "Ankara",
+	    "merkezi_adres" : "Ankara",
+	    "mersis_no" : "1",
+	    "sanayi_sicil_no" : "2",
+	    "tescilli_marka" : "Pars",
+	    "ticaret_sicil_no" : "4",
+	    "vergi_daire_no" : "5"
     },
-    {
-      id: 3,
-      first_name: "Catelyn",
-      last_name: "Stark",
-      alive: false,
-      house: "Stark",
-      gender: "f",
-      age: 33,
-      location: "Winterfell"
+    { 
+	    "belge_basligi" : "Talep 3",
+	    "bagli_olunan_holding" : "Gürcüoğlu",
+	    "firma_unvani" : "Danışmanlık",
+	    "is_yeri_adresi" : "Ankara",
+	    "merkezi_adres" : "Ankara",
+	    "mersis_no" : "1",
+	    "sanayi_sicil_no" : "2",
+	    "tescilli_marka" : "Pars",
+	    "ticaret_sicil_no" : "4",
+	    "vergi_daire_no" : "5"
     },
-    {
-      id: 4,
-      first_name: "Roose",
-      last_name: "Bolton",
-      alive: false,
-      house: "Bolton",
-      gender: "m",
-      age: 40,
-      location: "Dreadfort"
-    },
-    {
-      id: 5,
-      first_name: "Ramsay",
-      last_name: "Snow",
-      alive: false,
-      house: "Bolton",
-      gender: "m",
-      age: 15,
-      location: "Dreadfort"
-    },
-  ]
-}
+]
                 </code></pre>
             <h4>Ontoloji Varlık İlişkisi</h4>
             <table class="central-overflow-x">
