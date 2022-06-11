@@ -7,6 +7,3 @@ from django.http import FileResponse
 def index(request):
     context = dict()
     return render(request, 'index.html', context)
-
-def wsdl(request):
-    return FileResponse(open('wsdlOntoloji.wsdl','rb'))
