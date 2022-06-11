@@ -1,6 +1,6 @@
 from sys import api_version
 from django.urls import path
-from tobbon.api.views import views as api_views
+from tobbon.api import views as api_views
 
 urlpatterns = [
     path('belgeler/', api_views.belge_list_create_api_view, name="belge-listesi"),
