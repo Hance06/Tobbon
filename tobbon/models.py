@@ -1,5 +1,4 @@
 from django.db import models
-from django.urls import reverse
 
 # Create your models here.
 
@@ -19,6 +18,3 @@ class Belge(models.Model):
 
     def __str__(self):
         return self.belge_basliği
-
-    def absolute_url(self):
-        return reverse('tobbon:belge-listesi',kwargs={"slug": self.slug})
