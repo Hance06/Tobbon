@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'tobbon.apps.TobbonConfig',
     'tobbon',
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
