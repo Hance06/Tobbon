@@ -1,7 +1,7 @@
 import io
 from django.shortcuts import render
 from django.http import FileResponse
-from django.url import reverse
+from django.urls import reverse
 
 # Create your views here.
 
