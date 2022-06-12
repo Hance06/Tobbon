@@ -10,4 +10,4 @@ def index(request):
     return render(request, 'index.html', context)
 
 def absolute_url(self):
-    return reverse('belge-listesi', kwargs={'slug':self.slug})
+    return reverse('api/belgeler', kwargs={'slug':self.slug})
