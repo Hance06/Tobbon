@@ -21,4 +21,4 @@ class Belge(models.Model):
         return self.belge_basliği
 
     def absolute_url(self):
-        return reverse('tobbon:belge-listesi',args=self.id)
+        return reverse('tobbon:belge-listesi',kwargs={"slug": self.slug})
