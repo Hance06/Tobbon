@@ -27,7 +27,7 @@ SECRET_KEY = '*'
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG
 
-ALLOWED_HOSTS = ['cengpy.com', 'www.cengpy.com']
+#ALLOWED_HOSTS = ['cengpy.com', 'www.cengpy.com']
 
 
 # Application definition
