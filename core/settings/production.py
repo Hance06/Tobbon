@@ -3,6 +3,8 @@ from core.settings.base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = ['cengpy.com', 'www.cengpy.com']
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
