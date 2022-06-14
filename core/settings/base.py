@@ -26,10 +26,9 @@ SECRET_KEY = '*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['cengpy.com', 'www.cengpy.com']
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
